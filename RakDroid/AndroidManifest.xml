@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="droid.stephane.castrec.rakdroid"
+      android:versionCode="2"
+      android:versionName="1">
+    <application android:icon="@drawable/logoandroid" android:label="@string/app_name">	
+		   
+		<activity android:name=".SplashScreen"
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>         
+        </activity>        
+        	
+		<activity android:name=".RakDroid"
+        			android:label="@string/app_name"
+        			android:screenOrientation="portrait"> 
+        	<intent-filter>
+        		<action android:name=".RakDroid"/>
+        		<category android:name="android.intent.category.DEFAULT"/>
+        	</intent-filter>      
+        </activity>
+        
+        <receiver android:name=".WidgetRakDroid" android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget"/>
+        </receiver>
+ 
+      <!-- Service to perform web API queries -->        
+        <service android:name=".WidgetRakDroid$UpdateService" />        
+   		
+    </application>
+    <uses-sdk android:minSdkVersion="3" />
+
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+<uses-permission android:name="android.permission.INTERNET"/>
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+</manifest> 

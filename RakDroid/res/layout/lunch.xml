@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ViewFlipper xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:orientation="vertical"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:id="@+id/FlipperLunch"
+		    android:background="@drawable/rakday"
+		    >
+  
+		 
+	<!-- ******** Lunch ******** -->
+	<!-- ******** don't modify this layout ******** -->
+	<RelativeLayout android:id="@+id/layoutLunch0" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:background="@drawable/slideday"
+		android:layout_gravity="center">
+		
+		<!-- <ImageView  android:id="@+id/ImageSun"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:src="@drawable/soleil"
+			android:layout_gravity="center_horizontal"
+			/> -->
+		
+		<TextView android:text="date0" android:id="@+id/TxtDateLunch0" 
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"
+				android:textStyle="bold"
+				android:singleLine="false"	
+				android:textColor="@android:color/black" 
+				android:gravity="center"
+				android:layout_centerHorizontal="true"/>
+	
+
+		<TextView android:text="entree Lunch" android:id="@+id/TxtEntreeLunch0" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:textStyle="bold"
+			android:textColor="#fff"
+			android:paddingLeft="80dip"
+			android:paddingTop="150dip"
+			android:singleLine="false"
+			/>
+			
+		<TextView android:text="plat Lunch" android:id="@+id/TxtPlatLunch0" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:paddingLeft="80dip"
+			android:paddingTop="315dip"
+			android:textColor="#fff"
+			android:textStyle="bold" 
+			android:singleLine="false"
+			/>
+		
+		<Button android:id="@+id/btnGoDinner0"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:background="@drawable/gonight"		
+			android:layout_marginLeft="260dip"
+			android:layout_marginTop="400dip"
+			/>
+		
+		<Button android:id="@+id/btnLArg0"
+			android:background="@drawable/arg"			
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:width="35dip"
+			android:height="35dip"
+			android:layout_marginLeft="20dip"
+			android:layout_marginTop="400dip"
+			/>
+			
+
+	</RelativeLayout>	
+	
+	<RelativeLayout android:id="@+id/layoutLunch1" android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:background="@drawable/slideday"
+		android:layout_gravity="center">
+		
+		<TextView android:text="date1" android:id="@+id/TxtDateLunch1" 
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:textStyle="bold"
+			android:singleLine="false"
+			android:textColor="@android:color/black"
+			android:gravity="center" android:layout_width="fill_parent"/>
+
+		<TextView android:text="entree Lunch" android:id="@+id/TxtEntreeLunch1" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:paddingLeft="80dip"
+			android:textStyle="bold"
+			android:textColor="#fff"
+			android:singleLine="false"
+			android:paddingTop="150dip"
+			/>
+		
+		<TextView android:text="plat Lunch" android:id="@+id/TxtPlatLunch1" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:paddingLeft="80dip"
+			android:textStyle="bold"
+			android:textColor="#fff"
+			android:paddingTop="315dip"
+			android:singleLine="false"/>
+		
+		<Button android:id="@+id/btnGoDinner1"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:background="@drawable/gonight"		
+			android:layout_marginLeft="260dip"
+			android:layout_marginTop="400dip"
+			/>
+		
+		<Button android:id="@+id/btnLArg1"
+			android:background="@drawable/arg"			
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:width="35dip"
+			android:height="35dip"
+			android:layout_marginLeft="20dip"
+			android:layout_marginTop="400dip"
+			/>
+
+	</RelativeLayout>
+	
+	<RelativeLayout android:id="@+id/layoutLunch2" android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:background="@drawable/slideday"
+		android:layout_gravity="center">
+		
+		<TextView android:text="date2" android:id="@+id/TxtDateLunch2" 
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:textStyle="bold"
+			android:singleLine="false"
+			android:textColor="@android:color/black"
+			android:gravity="center"
+			android:layout_width="fill_parent"/>
+
+		<TextView android:text="entree Lunch" android:id="@+id/TxtEntreeLunch2" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:paddingLeft="80dip"
+			android:textStyle="bold"
+			android:textColor="#fff"
+			android:paddingTop="150dip"
+			android:singleLine="false"/>
+		
+		<TextView android:text="plat Lunch" android:id="@+id/TxtPlatLunch2" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:paddingLeft="80dip"
+			android:textStyle="bold"
+			android:textColor="#fff"
+			android:paddingTop="315dip"
+			android:singleLine="false"/>
+		
+		<Button android:id="@+id/btnGoDinner2"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:background="@drawable/gonight"		
+			android:layout_marginLeft="260dip"
+			android:layout_marginTop="400dip"
+			/>
+		
+		<Button android:id="@+id/btnLArg2"
+			android:background="@drawable/arg"			
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:width="35dip"
+			android:height="35dip"
+			android:layout_marginLeft="20dip"
+			android:layout_marginTop="400dip"
+			/>
+	</RelativeLayout>	
+</ViewFlipper>
+
+<!--android:paddingLeft="130dip"  -->
+
+
